@@ -83,7 +83,7 @@ npm install
 
 ### 3. Configure Oten IDP Application
 
-1. Log in to your [Oten Developer Portal](https://developer.oten.live)
+1. Log in to your [Oten Developer Portal](https://developer.oten.com)
 2. Create a new application or select an existing one
 3. Configure the following settings:
    - **Application Type**: Regular Web Application
@@ -93,7 +93,7 @@ npm install
    - **Allowed Scopes**: `openid`, `profile`, `email`
 
 4. Save your configuration and note your:
-   - **Issuer URL** (`https://account.oten.live/`)
+   - **Issuer URL** (`https://account.oten.com/`)
    - **Client ID**
    - **Client Secret**
 
@@ -102,7 +102,7 @@ npm install
 Create a `.env.local` file in the project root:
 
 ```bash
-OTEN_IDP_ISSUER=https://account.oten.live/
+OTEN_IDP_ISSUER=https://account.oten.com/
 OTEN_IDP_CLIENT_ID=your_client_id_here
 OTEN_IDP_CLIENT_SECRET=your_client_secret_here
 NEXTAUTH_URL=http://localhost:3000
@@ -135,13 +135,13 @@ The application will start at **http://localhost:3000**
 
 ### Environment Variables
 
-| Variable                 | Required | Description                                   | Example                      |
-| ------------------------ | -------- | --------------------------------------------- | ---------------------------- |
-| `OTEN_IDP_ISSUER`        | ✅ Yes   | Oten IDP issuer URL (OIDC discovery endpoint) | `https://account.oten.live/` |
-| `OTEN_IDP_CLIENT_ID`     | ✅ Yes   | Your application's client ID                  | `abc123xyz...`               |
-| `OTEN_IDP_CLIENT_SECRET` | ✅ Yes   | Your application's client secret              | `secret123...`               |
-| `NEXTAUTH_URL`           | ✅ Yes   | Your application's URL                        | `http://localhost:3000`      |
-| `NEXTAUTH_SECRET`        | ✅ Yes   | Secret for encrypting session tokens          | `random-32-char-string`      |
+| Variable                 | Required | Description                                   | Example                     |
+| ------------------------ | -------- | --------------------------------------------- | --------------------------- |
+| `OTEN_IDP_ISSUER`        | ✅ Yes   | Oten IDP issuer URL (OIDC discovery endpoint) | `https://account.oten.com/` |
+| `OTEN_IDP_CLIENT_ID`     | ✅ Yes   | Your application's client ID                  | `abc123xyz...`              |
+| `OTEN_IDP_CLIENT_SECRET` | ✅ Yes   | Your application's client secret              | `secret123...`              |
+| `NEXTAUTH_URL`           | ✅ Yes   | Your application's URL                        | `http://localhost:3000`     |
+| `NEXTAUTH_SECRET`        | ✅ Yes   | Secret for encrypting session tokens          | `random-32-char-string`     |
 
 ### NextAuth Configuration
 
